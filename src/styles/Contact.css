@@ -22,17 +22,25 @@
     font-weight: 700;
     letter-spacing: 2px;
     margin-bottom: 1rem;
+    color: var(--nav-pink-shade);
 }
 
-.hello-links {
-    color: var(--nav-blue-shade);
-    margin: .5rem 0;
+.contact-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
     text-decoration: none;
+    color: var(--white);
+    margin: 0 .3rem;
+    padding: .7rem;
+    background-color: var(--nav-deep-blue);
+    border-radius: 50%;
     transition: all 0.3s ease-in-out;
 }
 
-.hello-links:hover {
-    color: var(--nav-blue);
+.contact-icon:hover {
+    background-color: var(--nav-pink-shade);
 }
 
 /* Form */

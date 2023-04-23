@@ -21,7 +21,7 @@ const Skills = () => {
 						initial={{ y: "-80px", opacity: 0 }}
 						className='heading'>
 						<p className='heading-sub-text'>What I work with</p>
-						<p className='heading-text'>My Skills</p>
+						<p className='heading-text'>Skills</p>
 					</motion.div>
 					<motion.div
 						whileInView={skillEffect}

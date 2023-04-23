@@ -8,6 +8,9 @@ import {
 	FaSass,
 	FaYarn,
 	FaFigma,
+	FaJava,
+	FaGit,
+	FaPython,
 } from "react-icons/fa";
 import { DiJavascript1 } from "react-icons/di";
 import { VscJson } from "react-icons/vsc";
@@ -17,91 +20,62 @@ import {
 	SiNextdotjs,
 	SiTypescript,
 	SiFirebase,
-	SiStyledcomponents,
-	SiFramer,
-	SiMaterialui,
-	SiRedux
+	SiRedux,
+	SiCsharp,
+	SiUnity,
+	SiBitbucket,
+	SiPostgresql,
+	SiMongodb,
+	SiC
 } from "react-icons/si";
 
 export const SkillsData = [
 	{
-		name: "HTML",
-		icon: <FaHtml5 />,
+		name: "Java",
+		icon: <FaJava />,
 	},
 	{
-		name: "CSS",
-		icon: <FaCss3Alt />,
+		name: "C",
+		icon: <SiC />,
 	},
 	{
 		name: "Javascript",
 		icon: <DiJavascript1 />,
 	},
 	{
-		name: "TypeScript",
-		icon: <SiTypescript />,
-	},
-	{
-		name: "React Js",
+		name: "React",
 		icon: <FaReact />,
 	},
 	{
-		name: "Next Js",
-		icon: <SiNextdotjs />,
+		name: "PostgreSQL",
+		icon: <SiPostgresql />,
 	},
 	{
-		name: "Redux",
-		icon: <SiRedux />,
+		name: "MongoDB",
+		icon: <SiMongodb />,
 	},
 	{
-		name: "Firebase",
-		icon: <SiFirebase />,
+		name: "Python",
+		icon: <FaPython />,
 	},
 	{
-		name: "JSON",
-		icon: <VscJson />,
+		name: "C#",
+		icon: <SiCsharp />,
 	},
 	{
-		name: "Bootstrap",
-		icon: <FaBootstrap />,
-	},
-	{
-		name: "Tailwind",
-		icon: <SiTailwindcss />,
-	},
-	{
-		name: "Material UI",
-		icon: <SiMaterialui />,
-	},
-	{
-		name: "Sass",
-		icon: <FaSass />,
-	},
-	{
-		name: "Styled Components",
-		icon: <SiStyledcomponents />,
-	},
-	{
-		name: "Framer Motion",
-		icon: <SiFramer />,
+		name: "Unity",
+		icon: <SiUnity />,
 	},
 	{
 		name: "Git",
+		icon: <FaGit />,
+	},
+	{
+		name: "Github",
 		icon: <FaGithub />,
 	},
 	{
-		name: "Npm",
-		icon: <FaNpm />,
-	},
-	{
-		name: "Yarn",
-		icon: <FaYarn />,
-	},
-	{
-		name: "Figma",
-		icon: <FaFigma />,
-	},
-	{
-		name: "Photoshop",
-		icon: <SiAdobephotoshop />,
+		name: "BitBucket",
+		icon: <SiBitbucket />,
 	},
 ];

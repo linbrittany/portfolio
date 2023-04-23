@@ -1,5 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FaLinkedin, FaTwitter} from "react-icons/fa"
+import {BiEnvelope} from "react-icons/bi"
+import {BsGithub} from "react-icons/bs"
 import "../styles/Contact.css";
 import { motion } from "framer-motion";
 
@@ -25,18 +28,20 @@ const Contact = () => {
         <div className="contact" id='contact'>
             <div className="container">
                 <motion.div className="heading" initial={{opacity: 0}} whileInView={fade} viewport={{ once: true }}>
-                    <p className="heading-sub-text">Hire Me</p>
-                    <p className='heading-text'>Get in Touch</p>
+                    <p className='heading-text'>Say Hello</p>
                 </motion.div>
                 <div className="contact-box">
                     <motion.div className="left-box" initial={{opacity: 0, y: '-50px'}} whileInView={verticalLeft}>
                         <div className="contact-heading">
-                            <p>I’m interested in freelance opportunities – especially ambitious or large projects. However, if you have other request or question, don’t hesitate to use the form</p>
+                            <p>If you have any question or request, please contact me!</p>
                         </div>
                         <div className="contact-hello">
-                            <p>Say Hello</p>
-                            <Link className='hello-links' to="//wa.me/+2348060860565" target='_blank'>wa.me/pappyjay23</Link>
-                            <Link className='hello-links' to="//mailto:pjinadu02@gmail.com" target='_blank'>pjinadu02@gmail.com</Link>
+                            <p>Contacts</p>
+                            <ul className='nav-links'>
+                                <li><Link  to="//www.linkedin.com/in/linbrittany" target='_blank' className='contact-icon'><FaLinkedin /></Link></li>
+                                <li><Link  to="//github.com/linbrittany" target='_blank' className='contact-icon'><BsGithub /></Link></li>
+                                <li><Link  to="//mailto:brittanylin00@gmail.com" target='_blank' className='contact-icon'><BiEnvelope /></Link></li>
+                            </ul>
                         </div>
                     </motion.div>
                     <motion.div className="right-box" initial={{opacity: 0, y: '50px'}} whileInView={verticalLeft}>
@@ -79,7 +84,7 @@ const Contact = () => {
                                 type="text"
                                 name="message"
                                 id="message"
-                                placeholder="Hi, I think I need you to work on this particular product. Reach out as soon as you can"
+                                placeholder="Hi, I would like to contact you!"
                                 required
                                 ></textarea>
                             </div>

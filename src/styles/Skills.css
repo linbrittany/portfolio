@@ -9,9 +9,7 @@
     padding: 1rem;
     width: 80%;
     margin: 0 auto;
-    /* border: 1px solid var(--nav-blue); */
-    color: var(--nav-blue);
-    cursor: pointer;
+    color: var(--nav-grey);
     border-radius: 5px;
     display: flex;
     flex-direction: column;

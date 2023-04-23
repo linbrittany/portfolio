@@ -1,11 +1,10 @@
 import React from "react";
-import "../../styles/Navbar.css";
+import "../styles/Navbar.css";
+import ProfileImg from "../images/profile.png";
 import { FaHome, FaLaptop } from "react-icons/fa";
-import { BiBookContent, BiServer, BiEnvelope } from "react-icons/bi";
+import { BiBookContent, BiServer, BiEnvelope, BiBook } from "react-icons/bi";
 import { FiUser } from "react-icons/fi";
 import { Link } from "react-scroll";
-import ProfileImg from "../../images/profile.jpg";
-import NavLinks from "./NavLinks";
 import { motion } from "framer-motion";
 import { AnimatePresence } from "framer-motion";
 
@@ -43,22 +42,8 @@ const Navbar = ({ nav, handleNav }) => {
 					variants={navVariants}
 					exit='hidden'
 					className='navbar-container'>
-					<div className='top-details'>
-						<div className='img__cover'>
-							<img src={ProfileImg} alt='Main' className='profile-pic-small' />
-						</div>
-						<Link
-							activeClass='active'
-							spy={true}
-							smooth={true}
-							offset={0}
-							duration={500}
-							onClick={handleNav}
-							to='home'
-							className='profile-name'>
-							Peace Jinadu-Paul
-						</Link>
-						<NavLinks handleNav={handleNav} />
+					<div className='img__cover'>
+						<img src={ProfileImg} alt='Main' className='profile-pic-small' />
 					</div>
 					<ul className='mid-details'>
 						<Link
@@ -106,11 +91,24 @@ const Navbar = ({ nav, handleNav }) => {
 							smooth={true}
 							offset={0}
 							duration={500}
-							to='services'
+							to='experience'
 							className='mid-links'>
 							<BiServer className='mid-icon' />
 							<li className='mid-link' onClick={handleNav}>
-								Services
+								Experience
+							</li>
+						</Link>
+						<Link
+							activeClass='active'
+							spy={true}
+							smooth={true}
+							offset={0}
+							duration={500}
+							to='education'
+							className='mid-links'>
+							<BiBook className='mid-icon' />
+							<li className='mid-link' onClick={handleNav}>
+								Education
 							</li>
 						</Link>
 						<Link
@@ -123,7 +121,7 @@ const Navbar = ({ nav, handleNav }) => {
 							className='mid-links'>
 							<BiBookContent className='mid-icon' />
 							<li className='mid-link' onClick={handleNav}>
-								Works
+								Projects
 							</li>
 						</Link>
 						<Link
@@ -140,11 +138,6 @@ const Navbar = ({ nav, handleNav }) => {
 							</li>
 						</Link>
 					</ul>
-					<div className='copy'>
-						<small className='copyright'>
-							© Copyright ©2022 <br /> All rights reserved |
-						</small>
-					</div>
 				</motion.div>
 			</motion.nav>
 		</AnimatePresence>

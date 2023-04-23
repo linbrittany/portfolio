@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
 /* Hero Section */
 .hero-section {
-	background-image: url("../images/hero-bg-1.jpg");
+	background-image: url("../images/hero-bg-2.jpg");
 	background-attachment: fixed;
 	background-position: center;
 	background-size: cover;
@@ -33,7 +33,7 @@
 .hero-intro {
 	font-size: 4rem;
 	margin-bottom: 0.5rem;
-	color: var(--nav-blue);
+	color: var(--nav-pink-shade);
 	display: flex;
 	flex-direction: column;
 }
@@ -42,17 +42,18 @@
 .hero-desc-sub {
 	font-size: 1.2rem;
 	font-family: "Poppins", sans-serif;
-	font-weight: 100;
+	font-weight: 500;
+	color: var(--nav-grey);
 }
 
 .hero-contact {
 	text-decoration: none;
-	color: var(--nav-blue);
-  font-size: 80%;
-	font-weight: 500;
+	color: var(--nav-pink-shade);
+  font-size: 100%;
+	font-weight: 750;
 	letter-spacing: 3px;
 	padding: 1rem 2rem;
-	border: 1px solid var(--nav-blue);
+	border: 2px solid var(--nav-pink-shade);
 	background-color: transparent;
 	width: fit-content;
 	border-radius: 4px;
@@ -67,7 +68,7 @@
 }
 
 .hero-contact::after {
-	background-color: var(--nav-blue);
+	background-color: var(--nav-pink);
 	content: "";
 	display: block;
 	height: 100%;
@@ -106,11 +107,11 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border: 3px solid var(--nav-blue);
+	border: 3px solid var(--nav-pink);
 	border-radius: 50%;
 	transition: all 0.4s ease;
 	z-index: 99999999;
-	background-color: var(--nav-blue);
+	background-color: var(--nav-pink);
 }
 
 .menu-icon {
@@ -120,7 +121,7 @@
 }
 
 .menu-icon:hover {
-	background-color: var(--nav-blue-shade);
+	background-color: var(--nav-pink-shade);
 }
 
 .cv-icon {
@@ -134,7 +135,7 @@
 }
 
 .to-top-icon:hover {
-	background-color: var(--nav-blue-shade);
+	background-color: var(--nav-pink-shade);
 }
 
 .show {
@@ -183,6 +184,6 @@
 	.to-top-icon {
 		font-size: 1rem;
 		padding: 0.6rem;
-		background-color: var(--nav-blue);
+		background-color: var(--nav-pink);
 	}
 }

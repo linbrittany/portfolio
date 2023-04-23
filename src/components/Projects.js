@@ -1,12 +1,12 @@
 import React from "react";
-import "../styles/Works.css";
+import "../styles/Projects.css";
 import { IoOpenOutline } from "react-icons/io5";
 import { FiFolder, FiGithub } from "react-icons/fi";
-import { WorkData } from "../data/WorkData";
+import { WorkData } from "../data/ProjectsData";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
-const Works = () => {
+const Projects = () => {
 	const fade = {
 		opacity: 1,
 		transition: {
@@ -23,8 +23,8 @@ const Works = () => {
 						whileInView={fade}
 						viewport={{ once: true }}
 						className='heading'>
-						<p className='heading-sub-text'>I build real value</p>
-						<p className='heading-text'>Works</p>
+						<p className='heading-sub-text'>What I've worked on</p>
+						<p className='heading-text'>Projects</p>
 					</motion.div>
 
 					<motion.div
@@ -34,36 +34,17 @@ const Works = () => {
 						{WorkData.map((w, index) => {
 							return (
 								<div key={index}>
-									<Link to={w.site} target='_blank' className='work-link-group'>
+									<Link to={w.gitlink} target='_blank' className='work-link-group'>
 										<div className='works-card'>
-											<div className='works-container'>
-												<div className='top-work'>
-													<FiFolder className='work-folder' />
-													<div className='right'>
-														<Link
-															className='work-git'
-															to={w.gitlink}
-															target='_blank'>
-															<FiGithub />
-														</Link>
-														<Link
-															className='work-link'
-															to={w.site}
-															target='_blank'>
-															<IoOpenOutline />
-														</Link>
-													</div>
-												</div>
 												<div className='mid-work'>
 													<p className='work-title'>{w.title}</p>
 													<p className='work-desc'>{w.desc}</p>
 												</div>
 												<div className='bottom-work'>
 													{w.tech.map((e, index) => {
-														return <small key={index}>{e}</small>;
+														return <div className='tech-tag'>{e}</div>;
 													})}
 												</div>
-											</div>
 										</div>
 									</Link>
 								</div>
@@ -76,4 +57,4 @@ const Works = () => {
 	);
 };
 
-export default Works;
+export default Projects;

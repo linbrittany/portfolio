@@ -17,12 +17,12 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background: var(--nav-blue);
+  background: var(--nav-pink);
   border-radius: 100vh;
 }
 
 body::-webkit-scrollbar-thumb:hover {
-  background: var(--nav-blue-shade);
+  background: var(--nav-pink-shade);
 }
 
 html, body {
@@ -32,9 +32,9 @@ html, body {
 :root {
   --nav-grey: #a8a9b4;
   --nav-deep-grey: #94959b;
-  --nav-blue: #149ddd;
-  --nav-blue-shade: #0e668f;
-  --card-blue-shade: #112240;
+  --nav-pink: #2c2f3f;
+  --nav-pink-shade: #e595ea;
+  --card-blue-shade: #B6B6B64d;
   --nav-deep-blue: #2c2f3f;
   --nav-bgd: #040b14;
   --white: #fff;
@@ -100,7 +100,7 @@ html, body {
   stroke-dashoffset: -474;
   stroke-width: 8px;
   fill: transparent;
-  stroke: #149ddd;
+  stroke: var(--nav-pink-shade);
   border: 5px solid black;
   animation: 3s ease 0s 1 pageLoad;
 }
@@ -110,9 +110,10 @@ html, body {
   line-height: 32px;
   letter-spacing: 8px;
   color: #fff;
+  text-align: center;
   position: absolute;
-  left: 20px;
-  top: 10px;
+  left: 8px;
+  top: 15px;
   width: 100%;
   transform: translate(-50% -50%);
 }

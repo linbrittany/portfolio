@@ -96,7 +96,7 @@ const HeroSection = ({ nav, handleNav }) => {
 					<span>Brittany Lin</span>
 				</p>
 				<p className='hero-desc'>
-				<span className='hero-desc-sub'>Software Engineer</span>
+				<span className='hero-desc-sub'>Software Engineer Student</span>
 				</p>
 			</motion.div>
 			<motion.span
@@ -104,8 +104,8 @@ const HeroSection = ({ nav, handleNav }) => {
 				initial='hidden'
 				whileInView='visible'>
 				<a
-					href='Peace Jinadu-Paul CV.pdf'
-					download='Peace Jinadu-Paul CV'
+					href='CV - Brittany Lin.pdf'
+					download='Brittany Lin CV'
 					className='hero-contact'>
 					Download CV <BiDownload className='cv-icon' />
 				</a>

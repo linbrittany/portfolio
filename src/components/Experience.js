@@ -17,6 +17,7 @@ const Experience = () => {
           <div className="services" id='experience'>
               <div className="container">
                 <motion.div whileInView={fade} viewport={{ once: true }} initial={{opacity: 0}} className="heading">
+                    <p className='heading-sub-text'>What I've been doing</p>
                     <p className='heading-text'>Experience</p>
                 </motion.div>
                 <motion.div className="services-box" whileInView={fade} initial={{opacity: 0}}>

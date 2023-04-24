@@ -17,6 +17,7 @@ const Education = () => {
           <div className="services" id='education'>
               <div className="container">
                 <motion.div whileInView={fade} viewport={{ once: true }} initial={{opacity: 0}} className="heading">
+                    <p className='heading-sub-text'>Where I've studied</p>
                     <p className='heading-text'>Education</p>
                 </motion.div>
                 <motion.div className="services-box" whileInView={fade} initial={{opacity: 0}}>

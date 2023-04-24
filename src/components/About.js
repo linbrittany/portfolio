@@ -21,9 +21,9 @@ const About = () => {
                   </motion.div>
                   <div className="split-about">
                     <motion.div initial={{x: '-100%', opacity: 0}} whileInView={horizontal} className="about-content">
-                        <p>Hello! My name is Brittany. I'm on my way to become a Software Engineer. </p>
+                        <p>Hello, my name is Brittany!</p>
                         <br />
-                        <p>I'm always eager to expand my knowledge and gain new experiences!</p>
+                        <p>I am an enthusiastic and motivated undergraduate software engineering student. I am consistently seeking new opportunities to learn and expand my knowledge.</p>
                     </motion.div>
                     <motion.div initial={{x: '50', opacity: 0}} whileInView={horizontal}  className='about-img'>
                         <img src={ProfileImg} alt="Profile" />
